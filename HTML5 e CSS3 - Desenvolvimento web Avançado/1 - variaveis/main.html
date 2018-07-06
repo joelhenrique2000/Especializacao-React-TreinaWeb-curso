@@ -1,0 +1,46 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joel Henrique</title>
+    <style>
+        :root {
+            --azul: rgb(11, 30, 230);
+            --amarelo: rgb(238, 255, 0);
+            --vermelho: rgb(240, 0, 0);
+            --verde: rgb(82, 233, 12);
+        }
+
+        #paragrafo-um {
+            color: var(--azul);
+        }
+        #paragrafo-dois {
+            color: var(--amarelo);
+        }
+        #paragrafo-tres {
+            color: var(--azul);
+        }
+        .color_red {
+            color: var(--vermelho);
+        }
+        #paragrafo-javascript {
+            color: var(--verde);
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <p id="paragrafo-um">Lorem ipsum dolor sit amet</p>
+    <p id="paragrafo-dois">Lorem ipsum dolor sit amet</p>
+    <p id="paragrafo-tres">Lorem ipsum dolor sit amet</p>
+    <p class="color_red">Lorem ipsum dolor sit amet</p>
+    <p class="color_red">Lorem ipsum dolor sit amet</p>
+    <p id="paragrafo-javascript">Lorem ipsum dolor sit amet</p>
+    
+    <script>
+            document.documentElement.style.setProperty('--verde','#DCDCDC');
+    </script>
+</body>
+</html>
