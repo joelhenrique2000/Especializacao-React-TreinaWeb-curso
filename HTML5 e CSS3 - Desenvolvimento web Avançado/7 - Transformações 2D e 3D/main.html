@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joel Henrique</title>
+    <style>
+        div {
+            height: 200px;
+            width: 400px;
+            background-color: red;
+            border: 5px solid black;
+
+            /*Essa função move um elemento em relação à sua posição original*/
+            transform: translate(200px, 200px);
+
+            /*Essa função rotaciona um elemento de acordo com o ângulo passado*/
+            transform: rotate(10deg);
+            /*Caso queira que uma das pontas seja utilizada, basta juntar dois valores, como por exemplo, "top left"*/
+            transform-origin: bottom right;
+
+            /*Essa função permite redimensionar o elemento de acordo com um valor relativo. O valor 1 seria igual a 100%,
+            0.5 igual a 50%. A função espera receber o valor da largura e depois da altura*/
+            transform: scale(1.5, 0.8);
+
+            /*Essa função inclina o elemento de acordo com os eixos X e Y*/
+            transform: skew(20deg, 10deg);
+
+            /*Esta função combina todas as funções de transformação 2D em um só. 
+            A ordem dos parâmetros é: scaleX, skewY, skewX, scaleY, translateX e translateY*/
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+
+</body>
+</html>
