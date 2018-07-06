@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joel Henrique</title>
+    <style>
+        div {
+            background: url('canarinho_pistola.jpg');
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            border: 5px solid black;
+
+            /*Borra a imagem. Quanto maior o valor, maior o borrão*/
+            filter: blur(10px);
+
+            /*Ajusta o brilho da imagem. 0% deixa a imagem totalmente preta. 100% representa a imagem original.
+            Valores acima de 100% deixarão a imagem mais clara*/
+            filter: brightness(200%);
+
+            /*Ajusta o constraste da imagem, isso é, a distância entre a cor mais clara e a mais escura presenta na
+            imagem. 0% deixa a imagem complementamente preta. 100% representa a imagem original. Valores acima de
+            100% deixarão a imagem com menos constraste*/
+            filter: contrast(200%);
+
+            /*Possibilita a aplicação de sombras na imagem, com efeito igual às propriedades "text-shadow" e "box-shadow".*/
+            filter: drop-shadow(5px 5px 2px red);
+
+            /*Transforma as cores da imagem para uma escala cinza. 0% representa a imagem original. 100% deixará a imagem totalmente
+            cinza*/
+            filter: grayscale(100%);
+
+            /*Altera a matriz, as cores da imagem. Para isso precisamos conhecer a roda de cores. O círculo possui 360°. O valor que
+            passamos para a função hue-rotate é o ângulo que queremos girar da roda de cores da imagem. O valor deve ser entre 0 e 360.*/
+            filter: hue-rotate(140deg);
+            
+            /*Inverte as cores da imagem. 0% representa a imagem original. 100% deixará a imagem com as cores completamente invertidas.*/
+            filter: invert(100%);
+
+            /*Atribui um nível de transparência ao elemento. 100% representa a imagem original. 0% deixará a imagem totalmente transparente.*/
+            filter: opacity(20%);
+
+            /*Altera o nível de saturação da imagem. 0% deixa a imagem sem saturação. 100% representa a imagem original. Valores acima de 100%
+            deixarão a imagem supersaturada*/
+            filter: saturate(40%);
+
+            /*Transforma as cores da imagem para sépia. 0% representa a imagem original. 100% deixará a imagem totalmente sépia.*/
+            filter: sepia(100%);
+
+            /*
+
+                Biblioteca de filtros do instagram: https://una.im/CSSgram/
+
+            */
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+
+</body>
+</html>
