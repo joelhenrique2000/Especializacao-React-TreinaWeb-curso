@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joel Henrique</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <style>
+        .menu{
+            display: none;
+            color: #fff;
+            background-color: #252525;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .menu-item{
+            list-style-type: none;
+        }
+
+        #meuMarcador:checked + .menu{
+            display: block;
+        }
+                
+        #meuMarcador{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <label class="menu-button" for="meuMarcador" >
+        <i class="fa fa-bars" ></i>
+     </label>
+     
+     <input type="checkbox" id="meuMarcador" />
+
+     <ul class="menu" >
+        <li class="menu-item" >Home</li>
+        <li class="menu-item" >Produtos</li>
+        <li class="menu-item" >Sobre Nós</li>
+        <li class="menu-item" >Contato</li>
+     </ul>
+     
+</body>
+</html>
