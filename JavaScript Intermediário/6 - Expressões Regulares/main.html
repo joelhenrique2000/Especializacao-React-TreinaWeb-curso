@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joel Henrique</title>
+</head>
+<body>
+    
+    
+    <input type='text' id='data' value=''>
+
+    <script>
+
+        var regexp = /a.c/g,
+            myString = '234abc123 a4c5';
+
+        console.log(regexp.test(myString));
+        console.log(regexp.exec(myString));
+        console.log(myString.match(regexp));
+
+        var newString = 'Abc abc Abc abc';
+
+        console.log(newString.replace('a','1'));
+        console.log(newString.replace(/a/gi,'1'));
+
+        var new2String = 'abc-123-def',
+            my2Regex = /(a)bc-(\d{3})-def/;
+
+        console.log(new2String.replace(my2Regex,'my number: $1 - $2'));
+
+        console.log('abc'.search(/a/));
+
+        document.getElementById('data').addEventListener('keyup',function(){
+            let date = document.getElementById('data');
+            
+            var regexDate = /\d{2}\/\d{2}\/\d{4}/;
+            var regex = new RegExp('\d{2}\/\d{2}\/\d{4}');
+            
+            if(regexDate.test(date.value)) {
+                date.style.background = "green";
+            }else{
+                date.style.background = "red";
+            }
+        });
+
+        function formateDate(date){
+            return date.replace(/(\d{2})\/(\d{2})\/(\d{4})/,'$1 - $2 - $3');
+        }
+    </script>
+</body>
+</html>
