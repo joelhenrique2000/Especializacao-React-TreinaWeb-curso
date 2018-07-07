@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joel Henrique</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Closure
+        var add = (function(){
+            var counter = 0;
+            return function(){
+                return counter++;
+            }
+        })()
+
+        //Bind
+        var myObj = {
+            name: 'TreinaWeb',
+            sayName: function(){
+                console.log(this.name);
+                setTimeout(function(){
+                    console.log(this.name);
+                }.bind(this),1000);
+            }
+        }
+
+        myObj.sayName();
+
+        //Call
+       // myFunc.call(this, 1, 2, 3);
+
+        //Apply
+       // myFUnc.apply(this, [1,2,3,4]);
+
+        var Dog = {
+            name: 'Dingo',
+            sayName: function() {
+                console.log(this.name);
+            }
+        }
+
+        var Cat = {
+            name: 'Gumball'
+        }
+
+        Dog.sayName.call(Cat);
+
+
+
+        [].forEach.call('my string',function(letter){
+            console.log(letter);
+        })
+
+
+
+
+
+        function sum(n1){
+            return function(n2){
+                return n1 + n2;
+            }
+        }
+        console.log(sum(1)(2));
+    </script>
+</body>
+</html>
