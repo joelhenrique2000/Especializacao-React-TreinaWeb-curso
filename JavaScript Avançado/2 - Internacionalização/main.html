@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joel Henrique</title>
+</head>
+<body>
+    
+    <script>
+    
+        let myNumber = 1243;
+
+        let formatter = new Intl.NumberFormat('pt-BR');
+        console.log(formatter.format(myNumber));
+
+        let formatter2 = new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+        console.log(formatter2.format(myNumber));
+
+        /* -------------------------------------------------------- */
+
+        let myDate = new Date('2020-12-31T12:00:00');
+
+        let formatter3 = new Intl.DateTimeFormat('en-US');
+        console.log(formatter3.format(myDate))
+
+        let formatter4 = new Intl.DateTimeFormat('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        console.log(formatter4.format(myDate))
+
+        /* -------------------------------------------------------- */
+
+        
+    </script>
+</body>
+</html>
