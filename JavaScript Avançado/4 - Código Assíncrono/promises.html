@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Joel Henrique</title>
+</head>
+<body>
+    
+    <script>
+    
+        var myPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(500)
+            }, 2000);
+        })
+
+        myPromise
+        .then(value => {return 100;})
+        .then(value => console.log(`My Value: ${value}`))
+        .then(value => {return 300;})
+        .then(value => console.log(`My Value: ${value}`))
+
+    </script>
+</body>
+</html>
